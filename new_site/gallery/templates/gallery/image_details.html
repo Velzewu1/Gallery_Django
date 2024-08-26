@@ -1,0 +1,16 @@
+{% extends 'gallery/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if image.published_date %}
+            <div class="author">
+                {{ image.author }}
+            </div>
+            <div class="date">
+                {{ image.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ image.title }}</h1>
+        <img class='image' src="http://127.0.0.1:8000/media/{{image.image}}">
+    </div>
+{% endblock %}

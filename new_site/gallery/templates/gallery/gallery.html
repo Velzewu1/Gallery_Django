@@ -1,0 +1,22 @@
+{% extends 'gallery/base.html' %}
+
+{% block content %}
+    {% for image in images %}
+        <div class="post">
+            <div class="author">
+                {{ image.author }}
+            </div>
+            <div class="date">
+                {{ image.published_date }}
+            </div>
+            <h1><a href="{% url 'image_details' image.pk %}">{{ image.title }}</a></h1>
+            <img class='image' src="http://127.0.0.1:8000/media/{{image.image}}">
+        </div>
+    {% endfor %}
+    {% if user.is_authenticated %}
+        <div class="post-button">
+            <a href="http://127.0.0.1:8000/post/new/">Add image</a>
+        </div>
+    {% endif %}
+    <div>{{ image.pk }}</div>
+{% endblock %}

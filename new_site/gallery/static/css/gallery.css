@@ -1,0 +1,92 @@
+body {
+    padding-left: 0;
+}
+.page-header {
+    background-color: #371C1C;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 20px 20px 20px 40px;
+}
+h1 a {
+    color: #AAAAAA;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+.content {
+    margin-left: 40px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu';
+}
+.date {
+    color: #404040;
+}
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+    border: solid #AAAAAA 2px;
+    background-color: #999999;
+    width: 450px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #371C1C;
+}
+.author{
+    color: #371C1C;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    background-color: #AAAAAA;
+    width: 200px;
+    border-bottom: #555555 2px solid;
+    border-right: #555555 2px solid;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    width: 100%;
+    height: 600px;
+}
+
+.post-button{
+    width: 200px;
+    height: 70px;
+    background-color: #999999;
+    border-radius: 10px;
+    border: solid #AAAAAA 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-button a{
+    text-decoration: none;
+    color: #371C1C;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+.col-md-8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
